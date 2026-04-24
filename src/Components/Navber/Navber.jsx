@@ -13,7 +13,7 @@ const links = navItems.map((route) => <Link route={route}></Link>);
 const Navber = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="flex justify-between mx-10">
+    <nav className="flex justify-between mx-10 mt-5">
       <span onClick={() => setOpen(!open)} className="flex">
         {open ? (
           <IoClose className="w7 h-7 md:hidden"></IoClose>
