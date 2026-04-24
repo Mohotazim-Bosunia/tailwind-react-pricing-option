@@ -21,7 +21,11 @@ const Navber = () => {
           <IoMenu className="w7 h-7 md:hidden"></IoMenu>
         )}
 
-        <ul className="md:hidden">{links}</ul>
+        <ul
+          className={`md:hidden absolute duration-1000 ${open ? "top-8" : "-top-40"} bg-emerald-300`}
+        >
+          {links}
+        </ul>
         <h3 className="ml-3">My NavBar</h3>
       </span>
       <ul className="md:flex hidden">{links}</ul>
