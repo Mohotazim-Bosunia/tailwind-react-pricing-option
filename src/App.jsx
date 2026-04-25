@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import "./App.css";
 import Navber from "./Components/Navber/Navber";
 import PricingOptions from "./Components/PricingOptions/PricingOptions";
+import ResultCharts from "./Components/ResultCharts/ResultCharts";
 
 const fetchPrichingData = async () => {
   const res = await fetch("pricingData.json");
@@ -20,6 +21,8 @@ function App() {
         <Suspense fallback={"Loding..."}>
           <PricingOptions promiseFetch={promiseFetch}></PricingOptions>
         </Suspense>
+
+        <ResultCharts></ResultCharts>
       </main>
       <footer></footer>
     </>
